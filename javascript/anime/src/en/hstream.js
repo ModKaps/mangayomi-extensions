@@ -1,18 +1,16 @@
-const mangayomiSources = [
-  {
-    name: "Hstream",
-    lang: "en",
-    baseUrl: "https://hstream.moe",
-    apiUrl: "",
-    iconUrl: "https://hstream.moe/images/cropped-HS-1-192x192.png",
-    typeSource: "single",
-    itemType: 1,
-    isManga: false,
-    isNsfw: true,
-    version: "0.1.3",
-    pkgPath: "anime/src/en/hstream.js",
-  },
-];
+const mangayomiSources = [{
+    "name": "Hstream",
+    "lang": "en",
+    "baseUrl": "https://hstream.moe",
+    "apiUrl": "",
+    "iconUrl": "https://hstream.moe/images/cropped-HS-1-192x192.png",
+    "typeSource": "single",
+    "itemType": 1,
+    "isManga": false,
+    "isNsfw": true,
+    "version": "0.1.3",
+    "pkgPath": "anime/src/en/hstream.js"
+}];
 
 class DefaultExtension extends MProvider {
   constructor() {
