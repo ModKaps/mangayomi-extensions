@@ -23,7 +23,7 @@ void genManga(List<Source> jsMangasourceList) {
   List<Source> mangaSources = [];
   mangaSources.addAll(dartMangasourceList);
   mangaSources.addAll(jsMangasourceList);
-  final List<Map<String, dynamic>> jsonList = mangaSources
+  final List> jsonList = mangaSources
       .map((source) => source.toJson())
       .toList();
   final jsonString = jsonEncode(jsonList);
@@ -38,7 +38,7 @@ void genAnime(List<Source> jsAnimesourceList) {
   List<Source> animeSources = [];
   animeSources.addAll(dartAnimesourceList);
   animeSources.addAll(jsAnimesourceList);
-  final List<Map<String, dynamic>> jsonList = animeSources
+  final List> jsonList = animeSources
       .map((source) => source.toJson())
       .toList();
   final jsonString = jsonEncode(jsonList);
@@ -53,7 +53,7 @@ void genNovel(List<Source> jsNovelSourceList) {
   List<Source> novelSources = [];
   novelSources.addAll(dartNovelSourceList);
   novelSources.addAll(jsNovelSourceList);
-  final List<Map<String, dynamic>> jsonList = novelSources
+  final List> jsonList = novelSources
       .map((source) => source.toJson())
       .toList();
   final jsonString = jsonEncode(jsonList);
@@ -88,7 +88,7 @@ List<Source> _searchJsSources(Directory dir) {
                 ..appMinVerReq =
                     sourceJson["appMinVerReq"] ?? defaultSource.appMinVerReq
                 ..sourceCodeUrl =
-                    "https://raw.githubusercontent.com/m2k3a/mangayomi-extensions/$branchName/javascript/${sourceJson["pkgPath"] ?? sourceJson["pkgName"]}";
+                    "https://raw.githubusercontent.com/ModKaps/mangayomi-extensions/main/javascript/${sourceJson["pkgPath"] ?? sourceJson["pkgName"]}";
               if (sourceJson["id"] != null) {
                 source = source..id = int.tryParse("${sourceJson["id"]}");
               }
