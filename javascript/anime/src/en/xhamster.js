@@ -1,19 +1,16 @@
-const mangayomiSources = [
-  {
-    name: "xHamster",
-    lang: "en",
-    baseUrl: "https://xhamster.desi",
-    apiUrl: "",
-    iconUrl:
-      "https://static.xhmediacdn.com/xh-desktop/images/favicon/favicon-v2-256x256.png?v=1",
-    typeSource: "single",
-    itemType: 1,
-    isManga: false,
-    isNsfw: true,
-    version: "0.0.9",
-    pkgPath: "anime/src/en/xhamster.js",
-  },
-];
+const mangayomiSources = [{
+    "name": "xHamster",
+    "lang": "en",
+    "baseUrl": "https://xhamster.desi",
+    "apiUrl": "",
+    "iconUrl": "https://static.xhmediacdn.com/xh-desktop/images/favicon/favicon-v2-256x256.png?v=1",
+    "typeSource": "single",
+    "itemType": 1,
+    "isManga": false,
+    "isNsfw": true,
+    "version": "0.0.9",
+    "pkgPath": "anime/src/en/xhamster.js"
+}];
 
 class DefaultExtension extends MProvider {
   constructor() {
